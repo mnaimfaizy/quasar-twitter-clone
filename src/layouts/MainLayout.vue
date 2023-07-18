@@ -6,7 +6,13 @@
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title class="text-weight-bold">
-          Qwitter
+          <span class="gt-sm">{{ $route.name }}</span>
+          <q-icon
+              name="fas fa-dove"
+              size="sm"
+              color="primary"
+              class="header-icon q-pa-md lt-md"
+            />
         </q-toolbar-title>
 
       </q-toolbar>
@@ -30,6 +36,7 @@
           clickable
           v-ripple
           to="/"
+          exact
         >
           <q-item-section avatar>
             <q-icon color="primary" name="home" size="md" />
@@ -41,6 +48,7 @@
           clickable
           v-ripple
           to="/about"
+          exact
         >
           <q-item-section avatar>
             <q-icon color="primary" name="help" size="md" />
@@ -135,3 +143,12 @@ export default {
   }
 }
 </script>
+
+<style lang="sass">
+.header-icon
+  position: absolute
+  bottom: 0
+  left: 50%
+  transform: translateX(-50%)
+
+</style>
