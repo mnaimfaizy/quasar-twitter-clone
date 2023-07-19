@@ -1,6 +1,10 @@
 # QTwitterClone (q_twitter_clone)
 
-A Quasar Project
+A Quasar Project which is a clone of twitter app just showing the twitts, adding, removing and deleting the tweets.
+
+## Demo
+If you like to see the demo of the application click the [link](https://quasar-twitter-clone.mnfprofile.com).
+
 
 ## Install the dependencies
 ```bash
